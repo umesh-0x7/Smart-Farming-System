@@ -1,0 +1,130 @@
+{
+  "theme": {
+    "domain": "Smart Farming / Agriculture",
+    "mode": "Light",
+    "archetype": "1 - Organic & Earthy",
+    "description": "Grounded, tactile, physical. Uses organic colors to establish trust and connection with nature while maintaining an analytical clarity for a smart farming dashboard."
+  },
+  "colors": {
+    "background": {
+      "main": "#F9F8F6",
+      "surface": "#FFFFFF",
+      "surface_alt": "#F3F2EE",
+      "card": "#FFFFFF"
+    },
+    "text": {
+      "primary": "#1E293B",
+      "secondary": "#475569",
+      "muted": "#94A3B8",
+      "inverse": "#F9F8F6"
+    },
+    "brand": {
+      "primary": "#1B4332",
+      "primary_hover": "#2D6A4F",
+      "secondary": "#52796F",
+      "accent": "#D4A373",
+      "terracotta": "#E2725B"
+    },
+    "status": {
+      "success": "#40916C",
+      "warning": "#E9C46A",
+      "danger": "#E07A5F",
+      "info": "#457B9D"
+    },
+    "border": {
+      "default": "#E2E8F0",
+      "hover": "#CBD5E1",
+      "active": "#94A3B8"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Manrope, sans-serif",
+      "body": "IBM Plex Sans, sans-serif",
+      "mono": "IBM Plex Mono, monospace"
+    },
+    "scale": {
+      "h1": "text-4xl sm:text-5xl tracking-tight font-bold",
+      "h2": "text-2xl sm:text-3xl tracking-tight font-semibold",
+      "h3": "text-xl sm:text-2xl tracking-tight font-medium",
+      "h4": "text-lg sm:text-xl font-medium",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm",
+      "xs": "text-xs uppercase tracking-[0.2em]"
+    }
+  },
+  "layout_and_spacing": {
+    "system": "Tailwind Scale: Generous Spacing Philosophy",
+    "containers": "p-6, p-8 or p-12 for content areas, ensuring ample breathing room.",
+    "dashboard_grid": {
+      "mode": "MODE B: The Control Room Grid",
+      "base": "grid-cols-1 md:grid-cols-3 lg:grid-cols-4",
+      "gap": "gap-4 md:gap-6",
+      "span_logic": {
+        "summary_widget": "col-span-1",
+        "primary_data": "col-span-1 md:col-span-2 lg:col-span-3",
+        "feed_list": "col-span-1 lg:row-span-2"
+      }
+    },
+    "surfaces": {
+      "dashboard_cards": "Flat solid background (`bg-white`), sharp 1px border (`border-border`), no default shadow. On hover: `-translate-y-1` and `shadow-sm`.",
+      "headers": "Solid background with a hard bottom border, no generic glassmorphism for analytics clarity.",
+      "modals_dialogs": "Solid white backgrounds with `shadow-xl` and 1px border. Dark scrim `bg-black/30`."
+    },
+    "radius": "rounded-none or max rounded-md (6px) to maintain a crisp, analytical feel rather than overly playful soft edges."
+  },
+  "motion_and_interaction": {
+    "hover_states": "Always explicitly define text color on hover. Darken border or subtle translation (`-translate-y-px`).",
+    "transitions": "Use specific properties: `transition-transform duration-200 ease-out`, `transition-colors duration-200`.",
+    "focus": "High contrast ring: `focus:ring-2 focus:ring-brand-primary/50 focus:outline-none`.",
+    "staggered_entrance": "Use Framer Motion for list items and dashboard cards to stagger in on mount."
+  },
+  "components": {
+    "buttons": "Flat, sharp edges or `rounded-md`. Primary: `bg-[#1B4332] text-white hover:bg-[#2D6A4F]`. Secondary: `border border-[#E2E8F0] bg-transparent text-[#1E293B] hover:bg-[#F3F2EE]`.",
+    "inputs": "Use Shadcn `Input` and `Select`. Minimalist style: solid border `border-[#E2E8F0]`, light background `bg-white`, focus state matches primary brand color.",
+    "charts": "Use Recharts or Shadcn charts. Ensure color palette matches `brand` and `status` colors. No default bright neon palettes. Use earthy greens and terracotta accents.",
+    "tables": "Dense rows, left-aligned text, prominent column headers with uppercase small tracking styling.",
+    "sidebar": "Fixed left, distinct background (`#F9F8F6` or `#FAFAFA`) to separate from main white content area. Active states indicated by bold text and primary color accent line.",
+    "cards": "Cardless look or sharp borders. Remove thick default shadows."
+  },
+  "icons_and_assets": {
+    "icon_library": "lucide-react",
+    "icon_style": "Stroke width 1.5, simple, crisp.",
+    "media": {
+      "hero_login_bg": {
+        "url": "https://images.unsplash.com/photo-1615811361523-6bd03d7748e7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2MzR8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBzbWFydCUyMGFncmljdWx0dXJlJTIwZmFybSUyMHRlY2hub2xvZ3l8ZW58MHx8fHwxNzc5MTU3NjM4fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Green and white tractor on green grass field, used for login screen background with an overlay."
+      },
+      "dashboard_abstract_bg": {
+        "url": "https://static.prod-images.emergentagent.com/jobs/84ea87d1-7996-44f6-9806-e7412781826a/images/084814febdd71c1b4bc4cacf3374a6d3cf864dcd9cdefff828c9f09345643f85.png",
+        "description": "Abstract modern topography lines in subtle earth tones. Can be used as a very subtle, low-opacity background behind key dashboard metrics or headers."
+      },
+      "healthy_leaf": {
+        "url": "https://static.prod-images.emergentagent.com/jobs/84ea87d1-7996-44f6-9806-e7412781826a/images/1542ec887a009666446c809d5da7442067cd7dcd28bddb20ca0b63a922a428cb.png",
+        "description": "Healthy green crop leaf macro shot. Use in the Disease Detection section as a sample or success state."
+      },
+      "diseased_leaf": {
+        "url": "https://static.prod-images.emergentagent.com/jobs/84ea87d1-7996-44f6-9806-e7412781826a/images/4db43dd0191a6bbac0b02aaea5dc9f8750ce3da1fecad6cd9f0cc2900e4adf21.png",
+        "description": "Diseased crop leaf with brown spots. Use in the Disease Detection section to illustrate what to upload."
+      },
+      "greenhouse_worker": {
+         "url": "https://images.pexels.com/photos/5230961/pexels-photo-5230961.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+         "description": "Woman checking information while working in greenhouse. Good for onboarding or marketing banners."
+      }
+    }
+  },
+  "accessibility_and_testing": {
+    "contrast": "Ensure all text, especially on form placeholders and secondary info, meets APCA standards against `#F9F8F6` and `#FFFFFF` backgrounds.",
+    "testing_attributes": "All interactive elements (buttons, inputs, links, tabs) MUST have `data-testid` in kebab-case."
+  },
+  "instructions_to_main_agent": [
+    "Install Google fonts Manrope and IBM Plex Sans in the root HTML/CSS.",
+    "Implement a responsive sidebar layout for the dashboard.",
+    "Use Shadcn UI primitives but heavily customize them to remove soft Vercel shadows and rounded borders. Adopt sharp, crisp 1px borders.",
+    "Use Lucide-react for all iconography.",
+    "Always apply `data-testid` for buttons, inputs, links, and actionable cards.",
+    "In the Dashboard Grid, strictly adhere to MODE B (The Control Room Grid). No floating, unaligned widgets. Ensure `h-full` to align bottoms.",
+    "For the Weather and Sensor Data, rely on typography tracking and weight for hierarchy rather than introducing random colors.",
+    "When displaying the crop leaf disease detection, use the provided `diseased_leaf` and `healthy_leaf` images as visual aids/examples before upload."
+  ]
+}

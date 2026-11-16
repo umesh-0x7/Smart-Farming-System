@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: FastAPI (backend)",
+      "type": "python",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": ["server:app", "--reload", "--host", "0.0.0.0", "--port", "8001"],
+      "cwd": "${workspaceFolder}/backend",
+      "envFile": "${workspaceFolder}/backend/.env",
+      "justMyCode": true
+    },
+    {
+      "name": "Chrome: React (frontend)",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/frontend/src"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Full Stack",
+      "configurations": ["Python: FastAPI (backend)", "Chrome: React (frontend)"]
+    }
+  ]
+}
